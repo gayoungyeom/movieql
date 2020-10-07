@@ -1,7 +1,8 @@
 import {
     getById,
     getMovies,
-    addMovie
+    addMovie,
+    deleteMovie
 } from "./db";
 
 const resolvers = {
@@ -15,7 +16,10 @@ const resolvers = {
         addMovie: (_, {
             name,
             score
-        }) => addMovie(name, score)
+        }) => addMovie(name, score),
+        deleteMovie: (_, {
+            id
+        }) => deleteMovie(id)
     }
 };
 
