@@ -7,11 +7,13 @@
   "author": "gayoungyeom <gayoungyeom@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
     "graphql-yoga": "^1.18.3  ",
     "node-fetch": "^2.6.1"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "babel-node src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
